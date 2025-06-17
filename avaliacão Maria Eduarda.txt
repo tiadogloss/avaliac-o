@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class BoletimEscolar{
+    public static void main(String[] args) {
+        Scanner teclado=new Scanner (System.in);
+        
+        System.out.println("DIGITE A PRIMEIRA NOTA:");
+        double nota1 = teclado.nextDouble();
+        System.out.println("DIGITE A SEGUNDA NOTA:");
+        double nota2 = teclado.nextDouble();
+         System.out.println("DIGITE A TERCEIRO NOTA:");
+        double nota3 = teclado.nextDouble();
+         System.out.println("DIGITE A QUARTA NOTA:");
+        double nota4 = teclado.nextDouble();
+         System.out.println("DIGITE A QUINTA NOTA:");
+        double nota5 = teclado.nextDouble();
+         System.out.println("DIGITE A SEXTA NOTA:");
+        double nota6 = teclado.nextDouble();
+         System.out.println("DIGITE A SETIMA NOTA:");
+        double nota7 = teclado.nextDouble();
+         System.out.println("DIGITE A OITAVA NOTA:");
+        double nota8 = teclado.nextDouble();
+        
+        //calculo das medias bimestrais
+        double media1bi=(nota1+nota2)/2;
+        double media2bi=(nota3+nota4)/2;
+        double media3bi=(nota5+nota6)/2;
+        double media4bi=(nota7+nota8)/2;
+        //calculo da media dos semestres
+        double semestre1=(media1bi+media2bi)/2;
+        double semestre2=(media3bi+media4bi)/2;
+        // calculo da media final
+        double mediafinal =(semestre1+semestre2)/2;
+        
+        System.out.println("\n----RESULTADOS----");
+        System.out.println("MEDIA DO 1 BIMESTRE:"+media1bi);
+        System.out.println("MEDIA DO 2 BIMESTRE:"+media2bi);
+        System.out.println("MEDIA DO 3 BIMESTRE:"+media3bi);
+        System.out.println("MEDIA DO 4 BIMESTRE:"+media4bi);
+        System.out.println("MEDIA DO 1 SEMESTRE:"+semestre1);
+        System.out.println("MEDIA DO 2 SEMESTRE:"+semestre2);
+        System.out.println("MEDIA FINAL:"+mediafinal);
+        
+        teclado.close();
+        
+    }
+}
